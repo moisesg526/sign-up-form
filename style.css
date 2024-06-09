@@ -15,16 +15,21 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  display: flex;
 }
 
-.logo-container h1 {
+.logo-container img {
   position: absolute;
   width: 100%;
-  top: 20%;
-  background-color: black;
-  opacity: 20%;
+  height: 30%;
+  top: 30%;
+  opacity: 70%;
 }
 
-.transparent {
-    color: #fff;
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
