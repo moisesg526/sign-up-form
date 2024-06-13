@@ -5,9 +5,8 @@
 }
 body {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   width: 100%;
-  height: 100vw;
 }
 
 .logo-container {
@@ -17,6 +16,7 @@ body {
   background-repeat: no-repeat;
   position: relative;
   display: flex;
+  height: 100vh;
 }
 
 .logo-container img {
@@ -30,16 +30,13 @@ body {
 .form-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
   gap: 2rem;
 }
 
 .form-container h2 {
-  position: fixed;
-  top: 20%;
-  line-height: 2rem;
-  padding: 0 2rem;
+  line-height: 2.2rem;
+  padding: 0 3rem 2rem;
 }
 
 .form {
@@ -48,20 +45,21 @@ body {
   justify-content: flex-start;
   grid-template-rows: 40px 40px 40px;
   grid-template-columns: 200px 200px;
-  padding: 2rem;
+  padding: 2rem 3rem;
   gap: 2rem;
   box-shadow: 0px 5px 5px #dcdcdc, 0px -5px 5px #dcdcdc;
 }
 
 button {
-  margin: 0 2rem;
+  margin: 1rem 3rem 0;
   font-size: 1.2rem;
   background-color: #757575;
   color: #fff;
   border: none;
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem;
   border-radius: 10px;
   cursor: pointer;
+  width: 20%;
 }
 
 button:active {
@@ -75,6 +73,7 @@ a {
 
 label {
   font-size: 0.9rem;
+  font-weight: 700;
   color: #353535;
 }
 
@@ -91,10 +90,10 @@ input:focus {
 }
 
 input:invalid {
-    color: #df0000;
+    border-color: #df0000;
 }
 
 p {
-  padding: 0 2rem;
+  padding: 0 3rem;
   font-size: 1.1rem;
 }
